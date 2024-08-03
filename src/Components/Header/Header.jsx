@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [mobileNav, setMobileNav] = useState(false);
   return (
-    <div className="bg-black fixed text-white flex justify-between md:justify-between w-full h-[100px] items-center z-20 ">
+    <div className="bg-black fixed text-white flex justify-between md:justify-between w-full h-[100px] items-center z-20 px-3 ">
       {/* Header-logo */}
       <div>
-        <h1 className="font-bold md:text-3xl text-xl pl-3">Shopify</h1>
+        <h1 className="font-bold md:text-3xl text-xl ">Shopify</h1>
       </div>
       {/* desktop Nav links */}
       <ul className="md:flex gap-7 font-medium text-lg hidden ">
@@ -40,7 +40,7 @@ const Header = () => {
         </div>
       </div>
       <div
-        className="md:hidden z-10 pr-3"
+        className="md:hidden z-10 "
         onClick={() => {
           console.log(true);
           setMobileNav(!mobileNav);
