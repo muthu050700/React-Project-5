@@ -34,7 +34,7 @@ const Collection = () => {
             >
               <img
                 src={value.image}
-                className="w-[350px] h-[250px] lg:w-[450px] xl:[350px] object-cover"
+                className="w-[350px] h-[250px] lg:w-[450px] xl:[350px] object-cover hover:scale-105 md:scale-100"
               />
             </motion.div>
             <motion.div
