@@ -14,11 +14,11 @@ const Collection = () => {
             className="flex relative flex-col group w-[350px] h-[250px] rounded-lg lg:w-[450px] xl:w-[350px] overflow-hidden"
           >
             <motion.div
-              onHoverStart={() => {
+              onMouseEnter={() => {
                 setShowBtn(true);
                 setIndexValue(index);
               }}
-              onHoverEnd={() => {
+              onMouseLeave={() => {
                 setShowBtn(false);
                 console.log(false);
               }}
@@ -38,11 +38,11 @@ const Collection = () => {
               />
             </motion.div>
             <motion.div
-              onHoverStart={() => {
+              onMouseEnter={() => {
                 setShowBtn(true);
                 setIndexValue(index);
               }}
-              onHoverEnd={() => {
+              onMouseLeave={() => {
                 setShowBtn(false);
                 console.log(false);
               }}
