@@ -31,12 +31,12 @@ const CartPage = () => {
             </h1>
           </div>
         </div>
-        <div className="flex flex-col gap-10 lg:gap-20 lg:w-9/12 mx-auto py-10 md:py-20 px-3">
+        <div className="flex flex-col gap-10  md:gap-0 lg:w-9/12 mx-auto py-10  px-3">
           {cart.map((value) => {
             return (
               <div
                 key={value.id}
-                className="flex md:flex-row flex-col gap-10 justify-center md:py-4 items-center xl:gap-24 border-b-2"
+                className="flex md:flex-row flex-col md:gap-10 justify-center md:py-4 items-center xl:gap-24 border-b-2"
               >
                 <div
                   onClick={() => {
@@ -45,7 +45,7 @@ const CartPage = () => {
                       payload: value,
                     });
                   }}
-                  className=" cursor-pointer border-b-2 md:border-0 w-full md:w-[30px] flex justify-center  pb-3"
+                  className="hidden  cursor-pointer border-b-2 md:border-0 w-full md:w-[30px] md:flex justify-center  pb-3"
                 >
                   <MdDelete size={30} />
                 </div>
@@ -89,10 +89,21 @@ const CartPage = () => {
                 <p className=" lg:w-[70px] pb-3 font-bold text-xl">
                   ${value.price * value.qty}
                 </p>
+                <div
+                  onClick={() => {
+                    dispatch({
+                      type: "remove-from-cart",
+                      payload: value,
+                    });
+                  }}
+                  className="  cursor-pointer border-b-2 md:border-0 w-full md:w-[30px] md:hidden flex justify-center  pb-3"
+                >
+                  <MdDelete size={30} />
+                </div>
               </div>
             );
           })}
-          <div className="flex md:flex-row flex-col gap-5 justify-between items-center border-b-2 py-4">
+          <div className="flex  md:flex-row flex-col gap-5 justify-between items-center border-b-2 py-4">
             <form className="flex flex-col md:flex-row items-center gap-5">
               <input
                 type="text"

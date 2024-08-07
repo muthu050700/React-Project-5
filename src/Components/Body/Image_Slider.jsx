@@ -17,10 +17,10 @@ const Image_Slider = () => {
           nextEl: ".button-next-slide",
           prevEl: ".button-prev-slide",
         }}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         modules={[Navigation, Autoplay]}
       >
         {/* First img slider */}
