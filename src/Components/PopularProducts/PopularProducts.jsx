@@ -1,7 +1,13 @@
 import ProductsMenu from "./ProductsMenu";
-import { popularProductsDetails } from "../../Utils/ConstantForPopularProducts/ConstantForPopularProducts";
+// import { popularProductsDetails } from "../../Utils/ConstantForPopularProducts/ConstantForPopularProducts";
+import { useState } from "react";
+import { cartState } from "../../Utils/Context/Context";
 
 const PopularProducts = () => {
+  const {
+    state: { popularProductsDetails },
+  } = cartState();
+
   return (
     <div>
       <div className="flex flex-col items-center gap-3 ">

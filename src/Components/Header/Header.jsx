@@ -1,10 +1,17 @@
 import { FaCartShopping } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { cartReducer } from "../../Utils/Context/Reducer";
+import { cartState } from "../../Utils/Context/Context";
+// import { Cart } from "../../Utils/Context/Context";
 const Header = () => {
   const [mobileNav, setMobileNav] = useState(false);
+  const {
+    state: { cart },
+  } = cartState();
+  console.log(cart.length);
   return (
     <div className="bg-black fixed text-white flex justify-between md:justify-between w-full h-[100px] items-center z-20 px-3 ">
       {/* Header-logo */}
@@ -32,12 +39,15 @@ const Header = () => {
       {/* account and cart items */}
       <div className="flex gap-7 items-center font-medium text-lg ">
         <h2>Account</h2>
-        <div className="relative">
-          <FaCartShopping size={40} />
-          <span className="absolute top-0 left-[16px] text-black font-bold text-lg">
-            0
-          </span>
-        </div>
+        <Link to={"/cart"}>
+          {" "}
+          <div className="relative">
+            <FaCartShopping size={40} />
+            <span className="absolute top-0 left-[16px] text-black font-bold text-lg">
+              {cart.length}
+            </span>
+          </div>
+        </Link>
       </div>
       <div
         className="md:hidden z-10 "

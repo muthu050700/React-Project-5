@@ -5,11 +5,11 @@ import PopularProducts from "../PopularProducts/PopularProducts";
 
 const Body = () => {
   return (
-    <div>
+    <>
       <Image_Slider />
       <Collection />
       <PopularProducts />
-    </div>
+    </>
   );
 };
 

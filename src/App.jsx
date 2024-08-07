@@ -3,7 +3,10 @@ import Header from "./Components/Header/Header";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Body from "./Components/Body/Body";
 import Shop from "./Components/Shop/Shop";
+import Context from "./Utils/Context/Context";
+import CartPage from "./Components/CartPage.jsx/CartPage";
 
+import "react-toastify/dist/ReactToastify.css";
 const AppLayout = () => {
   return (
     <>
@@ -26,14 +29,18 @@ const appRouter = createBrowserRouter([
         path: "/shop",
         element: <Shop />,
       },
+      {
+        path: "/cart",
+        element: <CartPage />,
+      },
     ],
   },
 ]);
 function App() {
   return (
-    <>
+    <Context>
       <RouterProvider router={appRouter} />
-    </>
+    </Context>
   );
 }
 

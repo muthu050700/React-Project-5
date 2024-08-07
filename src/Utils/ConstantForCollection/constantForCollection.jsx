@@ -14,14 +14,14 @@ export const CollectionData = [
       "https://templates.hibootstrap.com/xton/default/assets/img/categories/img2.jpg",
   },
   {
-    id: "2",
+    id: "3",
     message: "Your Looks",
     offer: "Must Have",
     image:
       "https://templates.hibootstrap.com/xton/default/assets/img/categories/img3.jpg",
   },
   {
-    id: "2",
+    id: "4",
     message: "Take 20% OFF",
     offer: "Winter Spring",
     image:
