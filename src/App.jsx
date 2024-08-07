@@ -7,9 +7,11 @@ import Context from "./Utils/Context/Context";
 import CartPage from "./Components/CartPage.jsx/CartPage";
 
 import "react-toastify/dist/ReactToastify.css";
+import ScrollToTop from "./Components/ScrollToTop";
 const AppLayout = () => {
   return (
     <>
+      <ScrollToTop />
       <Header />
       <Outlet />
     </>

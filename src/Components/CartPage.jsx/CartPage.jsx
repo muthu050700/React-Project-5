@@ -18,15 +18,15 @@ const CartPage = () => {
     <>
       <div>
         <div
-          className="w-full h-[50vh] bg-cover bg-center"
+          className="w-full md:h-[50vh] h-[40vh] bg-cover bg-center"
           style={{
             backgroundImage:
               "url(https://static.vecteezy.com/system/resources/previews/006/694/292/non_2x/hand-holding-smile-face-block-customer-choose-emoticon-for-user-reviews-service-rating-ranking-customer-review-satisfaction-mood-mental-health-and-feedback-concept-free-photo.jpg)",
           }}
         >
-          <div className=" absolute bg-black opacity-50 w-full h-[50vh]"></div>
-          <div className="flex justify-center items-center w-full h-[60vh]">
-            <h1 className=" z-10 text-white font-bold lg:text-5xl">
+          <div className=" absolute bg-black opacity-50 w-full md:h-[50vh] h-[40vh]"></div>
+          <div className="flex justify-center items-center w-full md:h-[60vh] h-[55vh]">
+            <h1 className=" z-10 text-white font-bold text-3xl lg:text-5xl">
               SHOPPING CART
             </h1>
           </div>
