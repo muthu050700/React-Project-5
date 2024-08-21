@@ -5,7 +5,7 @@ export const Cart = createContext();
 
 const Context = ({ children }) => {
   // const [cart, setCart] = useState([]);
-  console.log(popularProductsDetails);
+
   const [state, dispatch] = useReducer(cartReducer, {
     popularProductsDetails: popularProductsDetails,
     cart: [],

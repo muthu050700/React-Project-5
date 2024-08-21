@@ -148,11 +148,11 @@ export const icons = [
   {
     id: "loopIcon",
     icon: <ImLoop2 size={30} />,
-    purpose: "Add to wish list",
+    purpose: "Compare",
   },
   {
     id: "searchIcon",
     icon: <IoSearch size={30} />,
-    purpose: "Add to wish list",
+    purpose: "Quick View",
   },
 ];

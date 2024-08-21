@@ -61,7 +61,7 @@ const ProductsMenu = ({ value }) => {
                   }`}
                 >
                   {" "}
-                  Price: ${value.price}
+                  Price: ${Math.trunc(value.price)}
                 </motion.span>
                 <div>
                   <FunctionalityOfCards showCart={showCart} value={value} />
@@ -79,7 +79,7 @@ const ProductsMenu = ({ value }) => {
                   className={`font-bold text-base md:hidden  `}
                 >
                   {" "}
-                  Price: ${value.price}
+                  Price: ${Math.trunc(value.price)}
                 </motion.span>
               </div>
               <div>

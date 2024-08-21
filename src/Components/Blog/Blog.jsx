@@ -1,6 +1,6 @@
 import React from "react";
 
-const Shop = () => {
+const Blog = () => {
   return (
     <div className=" flex justify-center items-center w-full h-screen">
       <h1 className="font-bold text-4xl">
@@ -10,4 +10,4 @@ const Shop = () => {
   );
 };
 
-export default Shop;
+export default Blog;
